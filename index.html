@@ -47,7 +47,7 @@
   </script>
 
 
-  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
 
   <script>
     function createUniversalLink() {
@@ -55,7 +55,7 @@
       document.getElementById('universalLink1').append(link1)
       
       
-      liff.permanentLink.setExtraQueryParam('/path/?param=9')
+      liff.permanentLink.setExtraQueryParam('param=9')
       const link2 = liff.permanentLink.createUrl()
       document.getElementById('universalLink2').append(link2)
     }
